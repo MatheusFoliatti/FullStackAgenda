@@ -84,6 +84,15 @@ export function Home() {
     Load();
   }
 
+  const listStack = [
+		{ Tec: "JavaScript", color: "red" },
+		{ Tec: "HTML", color: "yellow" },
+		{ Tec: "CSS", color: "pink" },
+		{ Tec: "Typescript", color: "purple" },
+		{ Tec: "React", color: "cyan" },
+		{ Tec: "HUAWEII", color: "blue" },
+];
+
   return (
     <div className={style.container}>
 
@@ -91,7 +100,8 @@ export function Home() {
         cover="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=350&q=80"
         avatar="https://github.com/MatheusFoliatti.png"
         name="Matheus Foliatti"
-        office='Assistente de TI'/>
+        office='Assistente de TI'
+        stacks={listStack}/>
 
       <div className={style.contatos}>
         <div className={style.controles}>

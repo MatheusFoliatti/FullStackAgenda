@@ -9,14 +9,10 @@
   .card {
     display: flex;
     flex-direction: column;
-  
     align-items: center;
-  
     width: 40.6rem;
     height: 8.4rem;
     border-radius: 8px;
-  
-    background: var(--color-bg-light);
     margin-top: 2rem;
   }
  .card .avatar {
@@ -24,8 +20,6 @@
     height: 60px;
     margin-top: 1rem;
     margin-left: 3rem;
-  
-    border: 2.5px solid var(--color-line-contato);
     border-width: 1;
     border-radius: 60px;
     align-self:flex-start;
@@ -36,10 +30,8 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
-  
     margin-top: -4.6rem;
-  
-    color: var(--color-line-contato);
+    color: #fff;
     align-self: center;
   }
   
@@ -48,9 +40,7 @@
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 160%;
-  
     margin-top: -1rem;
-  
     color: var( --gray-dark);
     align-self:center;
   }
@@ -66,25 +56,19 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    
   }
   
   .card .stack span {
     width: 7rem;
     height: 2.3rem;
-  
     display: flex;
     background:var(--color-line-contato);
     border-radius: 4px;
-  
     align-items: center;
     justify-content: center;
-  
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 160%;
-    box-shadow: 1px 2px 9px #740db4;
-  
   }
   

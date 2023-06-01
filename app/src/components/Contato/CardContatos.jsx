@@ -12,8 +12,7 @@ import styleContato from "./CardContatos.module.css";
   }else{
     await server.delete(`user/${cache}`);
   }
-
-  }
+}
 
 export async function Update(user) {
   if(cache ===''){
@@ -31,9 +30,7 @@ export async function Update(user) {
     celular: cell,
     });
   }
-
-  }
-
+}
 
 export function CardContato({ avatar, name, celular, id }) {
    function Cache(id) {

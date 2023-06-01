@@ -1,15 +1,11 @@
 .card {
   display: flex;
   flex-direction: column;
-
   align-items: center;
-
   width: 25.6rem;
-  height: 40.4rem;
-
+  height: 30rem;
   border: 1px solid var(--color-bg-dark);
   border-radius: 8px;
-
   background: var(--color-bg-dark);
 }
 .card > img {
@@ -32,9 +28,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 160%;
-
   margin-top: 1.6rem;
-
   color: var(--gray-light);
 }
 
@@ -43,9 +37,7 @@
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 160%;
-
   margin-bottom: 10px;
-
   color: var(--gray-dark);
 }
 
@@ -65,17 +57,13 @@
 .card span {
   width: 11rem;
   height: 2.3rem;
-
   display: flex;
   background: var(--green);
   border-radius: 4px;
-
   align-items: center;
   justify-content: center;
-
   font-style: normal;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 160%;
-
 }
