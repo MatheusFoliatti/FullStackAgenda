@@ -18,11 +18,14 @@ export function Home() {
     Load()
   }, []);
 
+  function refreshPage(){
+    window.location.reload();
+} 
+
   async function Load() {
     const temp = await server.get("user/");
 
-    setPersons(temp.data);
-    console.log({persons});
+    Ordenar(temp.data);
   }
 
   async function Adicionar() {
@@ -50,6 +53,7 @@ export function Home() {
 
     Delete();
     Load();
+    refreshPage();
   }
 
   function Pesquisar() {
@@ -82,7 +86,24 @@ export function Home() {
 
     Update(user);
     Load();
+    refreshPage();
   }
+
+  function Ordenar(persons){
+    const alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z' ];
+    const tempPerson = [];
+    let letraUsadas = [];
+
+    for(let i=0; i<=25; i++){
+        persons.map((person => {
+            if(person.name[0] === alfabeto[i]) {
+                letraUsadas.push(alfabeto[i]);
+                tempPerson.push(person);}  
+         }
+        ));
+    }
+    setPersons(tempPerson);
+      }
 
   const listStack = [
 		{ Tec: "JavaScript", color: "red" },
