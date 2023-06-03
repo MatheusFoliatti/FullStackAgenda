@@ -188,10 +188,10 @@ export function Home() {
 					</form>
 				</div>
 				<div className={style.listaContatos}>
-					<div className={style.listaCatalogo}>
-						<h1 className={style.letraCatalogo}>{person.name[0]}</h1>
-						<div className={style.contatoCatalogo}>
-							{persons.map((person, index) => (
+					<div className={style.contatoCatalogo}>
+						{persons.map((person, index) => (
+							<div className={style.listaCatalogo}>
+								<h1 className={style.letraCatalogo}>{person.name[0]}</h1>, (
 								<CardContato
 									key={index}
 									avatar={person.avatar}
@@ -199,8 +199,9 @@ export function Home() {
 									celular={person.celular}
 									id={person.id}
 								/>
-							))}
-						</div>
+								)
+							</div>
+						))}
 					</div>
 				</div>
 			</div>

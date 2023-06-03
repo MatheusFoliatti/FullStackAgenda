@@ -16,6 +16,10 @@
     margin-top: 2rem;
     cursor: pointer;
   }
+  .card:active{
+    border: 1px solid #fff;
+  }
+
  .card .avatar {
     width: 60px;
     height: 60px;
